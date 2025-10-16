@@ -1,14 +1,14 @@
 #include <stdio.h>
-#include <string.h>
-int main(void)
+int main (void)
 {
-char name[20];
-printf("Enter your name:\n");
-scanf("%s", name);
-printf("\"%s\"\n", name);
-printf("\"%20s\"\n", name);
-printf("\"%-20s\"\n", name);
-printf("%*s", strlen(name) + 3, name);
+int n=0, z=0;
+printf("Choose the number, Neo\n");
+scanf("%d", &n);
+z = n;
+while (n <= z+10)
+        {
+        printf("%d\n", n++);
+        }
 getchar();getchar();
 return 0;
 }

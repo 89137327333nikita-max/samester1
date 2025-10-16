@@ -1,12 +1,16 @@
 #include <stdio.h>
-#include <float.h>
-int main (void)
+void cube(double n);
+int main(void)
 {
-float numf = 1.0/3.0;
-double numd = 1.0/3.0;
-printf("float: %.4f; double: %.4f \n", numf, numd);
-printf("float: %.12f; double: %.12f \n", numf, numd);
-printf("float: %.17f; double: %.17f \n", numf, numd);
-printf("%d %d", FLT_DIG, DBL_DIG);
-getchar();
+double n;
+printf("Enter number to cube it\n");
+scanf("%lf", &n);
+cube(n);
+getchar();getchar();
 return 0;
+}
+void cube(double n)
+{
+double x3 = n*n*n;
+printf("Cube of %f is %f",n, x3);
+}
